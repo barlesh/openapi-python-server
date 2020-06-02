@@ -33,7 +33,7 @@ paths:
         - "basic"
       summary: "Add a basic stuff"
       description: ""
-      operationId: "app.addBasic"
+      operationId: "src.basic.ctrl.basic.addBasic"
       consumes:
         - "application/json"
         - "application/xml"
