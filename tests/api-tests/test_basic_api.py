@@ -21,7 +21,8 @@ with openapi_client.ApiClient(configuration) as api_client:
     print("1")
     api_instance = openapi_client.BasicApi(api_client)
     print("2 - api_instance: " + str(api_instance))
-    body = openapi_client.Basic() # Basic | Basic object that needs to be added to the basic stuff (optional)
+    body = openapi_client.Basic(id=1, description="whattt") # Basic | Basic object that needs to be added to the basic stuff (optional)
+    
     print("3 - body: " + str(body))
     try:
         # Add a basic stuff
