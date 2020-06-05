@@ -31,3 +31,9 @@ with openapi_client.ApiClient(configuration) as api_client:
         pass
         print("Exception when calling BasicApi->src_basic_ctrl_basic_add_basic: %s\n" % e)
 
+    ret = api_instance.src_basic_ctrl_basic_get_all()
+    print("ret: \n" + str(ret))
+
+
+
+

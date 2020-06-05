@@ -81,6 +81,7 @@ All URIs are relative to *https://localhost/v2*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *BasicApi* | [**src_basic_ctrl_basic_add_basic**](docs/BasicApi.md#src_basic_ctrl_basic_add_basic) | **POST** /basic | Add a basic stuff
+*BasicApi* | [**src_basic_ctrl_basic_get_all**](docs/BasicApi.md#src_basic_ctrl_basic_get_all) | **GET** /basic |  Get all basic stuff
 
 
 ## Documentation For Models

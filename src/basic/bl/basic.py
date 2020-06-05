@@ -6,3 +6,6 @@ def addBasic(basicObj):
     basic_list.append(basicObj)
     print("basic_object: {}".format(basicObj))
     return basicObj
+
+def getAll():
+    return basic_list

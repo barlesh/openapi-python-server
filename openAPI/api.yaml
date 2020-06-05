@@ -49,8 +49,22 @@ paths:
       responses:
         "405":
           description: "Invalid input"
-        "202":
+        "200":
           description: "Nice one"
+
+    get:
+      tags:
+        - "basic"
+      summary: " Get all basic stuff"
+      description: ""
+      operationId: "src.basic.ctrl.basic.getAll"
+      responses:
+        "200":
+          description: OK
+          schema: { type: "array", items: { $ref: "#/definitions/Basic" } }
+        "405":
+          description: "Invalid input"
+
       # security:
       #   - petstore_auth:
       #       - "write:pets"

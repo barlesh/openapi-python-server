@@ -8,3 +8,10 @@ def addBasic(body):
         return ret, 202
     except:
         return "error", 400
+
+def getAll():
+    try:
+        ret = basic.getAll()
+        return ret, 200
+    except:
+        return "error", 400
