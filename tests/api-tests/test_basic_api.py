@@ -18,17 +18,11 @@ configuration = openapi_client.Configuration(
 # Enter a context with an instance of the API client
 with openapi_client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    print("1")
     api_instance = openapi_client.BasicApi(api_client)
-    print("2 - api_instance: " + str(api_instance))
     body = openapi_client.Basic(id=1, description="whattt") # Basic | Basic object that needs to be added to the basic stuff (optional)
-    
-    print("3 - body: " + str(body))
     try:
         # Add a basic stuff
         ans = api_instance.src_basic_ctrl_basic_add_basic(body=body)
-        print("4")
-        print("ans: " + str(ans))
     except ApiException as e:
         pass
         print("Exception when calling BasicApi->src_basic_ctrl_basic_add_basic: %s\n" % e)
