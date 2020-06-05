@@ -19,6 +19,6 @@ services:
       dockerfile: Dockerfile.tester
     environment: 
       - PORT=${PORT:-8080}
-      - HOST=${HOST:-localhost}
+      - HOST=${HOST:-web}
     # volumes:
     #   - .:/code

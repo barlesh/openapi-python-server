@@ -7,4 +7,4 @@ WORKDIR /code
 RUN pip install sdk/
 WORKDIR /code/tests/api-tests
 RUN echo 'pip freeze'
-CMD python test_basic_api.py
+CMD sleep 5 && python test_basic_api.py
